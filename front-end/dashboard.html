@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow Pro Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <div class="navbar">
+
+        <div>
+
+    <h2>TaskFlow Pro</h2>
+
+    <p>
+         Task Management System
+    </p>
+
+</div>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+    <h1 id="welcomeText"></h1>
+ 
+    <div class="stats">
+
+        <div class="stat-card">
+            <h3>Total Tasks</h3>
+            <p id="totalTasks">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Pending</h3>
+            <p id="pendingTasks">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Completed</h3>
+            <p id="completedTasks">0</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>High Priority</h3>
+         <p id="highPriorityTasks">0</p>
+        </div>
+    </div>
+
+    <div class="progress-section">
+
+      <h3>Task Completion Progress</h3>
+
+      <div class="progress-bar">
+
+        <div id="progressFill"></div>
+
+      </div>
+
+      <p id="progressText">0%</p>
+
+      </div>
+    
+    <input
+    type="text"
+    id="searchTask"
+    placeholder="🔍 Search Tasks...">
+
+    <div class="filter-buttons">
+
+    <button onclick="setFilter('All')">
+        All
+    </button>
+
+    <button onclick="setFilter('Pending')">
+        Pending
+    </button>
+
+    <button onclick="setFilter('Completed')">
+        Completed
+    </button>
+
+</div>
+    <div class="task-form">
+
+        <input
+            type="text"
+            id="taskTitle"
+            placeholder="Task Title"
+        >
+
+        <textarea
+            id="taskDescription"
+            placeholder="Task Description" 
+        ></textarea>
+
+        <select id="taskPriority">
+
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+
+        </select>
+
+        <input
+            type="date"
+            id="taskDueDate"
+        >
+
+        <button id="addTaskBtn">
+            Add Task
+        </button>
+
+    </div>
+
+    <div id="taskList"></div>
+
+</div>
+
+
+
+<footer>
+
+    TaskFlow Pro © 2026
+
+    <br>
+
+    Developed by Mohammed Althaf C H
+
+</footer>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

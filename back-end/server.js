@@ -219,21 +219,7 @@ app.delete("/tasks/:id", (req, res) => {
 
 });
 
-async function completeTask(id){
 
-    await fetch(
-
-        `${API_URL}/tasks/${id}`,
-
-        {
-            method:"PUT"
-        }
-
-    );
-
-    loadTasks();
-
-} 
 // mark task as completed
 
 app.put("/tasks/:id", (req, res) => {

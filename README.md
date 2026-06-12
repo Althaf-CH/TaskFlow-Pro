@@ -3,8 +3,11 @@
 A full-stack task management application that helps users create, organize, track, and manage daily tasks efficiently through an interactive dashboard.
 
 ## Live Demo
+front-end:
+https://althafch-taskflowpro.netlify.app/
 
-(Add your deployed project link here)
+back-end:
+https://taskflow-pro-production-b789.up.railway.app/
 
 ---
 

@@ -5,7 +5,9 @@ const userId =
 localStorage.getItem("userId");
 
 let currentFilter = "All"; //task filter
-
+if(!localStorage.getItem("userId")){
+    window.location = "login.html";
+}
 document.getElementById("welcomeText")
 .textContent =
 `Welcome, ${localStorage.getItem("name")}`;

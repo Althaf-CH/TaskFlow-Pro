@@ -1,5 +1,5 @@
 const API_URL =
-"http://localhost:5000";
+"https://taskflow-pro-production-b789.up.railway.app";
 
 const registerForm =
 document.getElementById("registerForm");
